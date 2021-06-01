@@ -3,7 +3,7 @@ syntax reset
 let g:colors_name = "colorama"
 set background=dark
 set t_Co=256
-hi Normal guifg=#dadada ctermbg=NONE guibg=#272935 gui=NONE
+hi Normal guifg=#C2C2DA ctermbg=NONE guibg=#0D0E17 gui=NONE
 
 hi DiffText guifg=#e56695 guibg=NONE
 hi ErrorMsg guifg=#e56695 guibg=NONE
@@ -17,11 +17,11 @@ hi GitGutterChangeDelete guifg=#e56695 guibg=NONE
 hi Type guifg=#e56695 guibg=NONE
 hi Identifier guifg=#e56695 guibg=NONE
 
-hi Constant guifg=#64a56b guibg=NONE
-hi Repeat guifg=#64a56b guibg=NONE
-hi DiffAdd guifg=#64a56b guibg=NONE
-hi GitGutterAdd guifg=#64a56b guibg=NONE
-hi Keyword guifg=#64a56b guibg=NONE
+hi Constant guifg=#A5E069 guibg=NONE
+hi Repeat guifg=#A5E069 guibg=NONE
+hi DiffAdd guifg=#A5E069 guibg=NONE
+hi GitGutterAdd guifg=#A5E069 guibg=NONE
+hi Keyword guifg=#A5E069 guibg=NONE
 
 hi Title guifg=#cd8367 guibg=NONE
 hi PreCondit guifg=#cd8367 guibg=NONE
@@ -37,17 +37,14 @@ hi DiffChange guifg=#cd8367 guibg=NONE
 hi GitGutterChange guifg=#cd8367 guibg=NONE
 
 hi Function guifg=#4a5fb4 guibg=NONE
-hi MatchParen guifg=#4a5fb4 guibg=NONE
-hi Number guifg=#dadada guibg=NONE
-hi SpecialChar guifg=#dadada guibg=NONE
-hi Special guifg=#dadada guibg=NONE
+hi MatchParen guifg=#5fb49a guibg=NONE
+hi Number guifg=#C2C2DA guibg=NONE
+hi SpecialChar guifg=#C2C2DA guibg=NONE
+hi Special guifg=#C2C2DA guibg=NONE
 hi IncSearch guifg=#cb79d8 guibg=#454545
-hi String guifg=#A84AB4 guibg=NONE
-
-
+hi String guifg=#6D7FC9 guibg=NONE
 hi Directory guifg=#7040BF guibg=NONE
 hi markdownLinkText guifg=#7040BF guibg=NONE
-hi javaScriptBoolean guifg=#7040BF guibg=NONE
 hi Include guifg=#7040BF guibg=NONE
 hi Storage guifg=#7040bf guibg=NONE
 hi Statement guifg=#cb79d8 guibg=NONE
@@ -55,34 +52,80 @@ hi Operator guifg=#cb79d8 guibg=NONE
 hi Method guifg=#e56695 guibg=NONE
 hi Todo guifg=#e56695 guibg=NONE
 
-" CSS 
+" CSS support
 hi cssIdentifier guifg=#e56695 guibg=NONE
-hi cssImportant guifg=#e56695 guibg=NONE
-hi cssClassName guifg=#7040bf guibg=NONE
-hi cssClassNameDot guifg=#7040bf guibg=NONE
 hi cssAttr guifg=#cb79d8 guibg=NONE
-hi cssColor guifg=#dadada guibg=NONE
-hi cssIncludeKeyword guifg=#64a56b guibg=NONE
+hi cssImportant guifg=#cb79d8 guibg=NONE
+hi cssClassName guifg=#cd8367 guibg=NONE
+hi cssClassNameDot guifg=#cd8367 guibg=NONE
+hi cssColor guifg=#C2C2DA guibg=NONE
+hi cssIncludeKeyword guifg=#A5E069 guibg=NONE
+hi cssAtRule guifg=#cd8367 guibg=NONE
+hi cssIdentifier guifg=#E0BB69 guibg=NONE
+hi cssTagName guifg=#E0BB69 guibg=NONE
+hi cssAttrRegion guifg=#A5E069 guibg=NONE
+hi cssStringQQ guifg=#A5E069 guibg=NONE
+
+" Javascript Support
+hi javaScriptReserved guifg=#cb79d8 guibg=NONE 
+hi javaScriptFunction guifg=#cb79d8 guibg=NONE 
+hi jsGlobalObjects guifg=#c481ff guibg=NONE 
+hi jsImport guifg=#cb79d8 guibg=NONE
+hi jsExport guifg=#cb79d8 guibg=NONE
+hi jsFrom guifg=#c481ff guibg=NONE
+hi jsFuncName guifg=#c481ff guibg=NONE
+hi jsFuncCall guifg=#c481ff guibg=NONE
+hi jsStringS guifg=#B992DA guibg=NONE
+hi jsString guifg=#B992DA guibg=NONE
+hi jsClassKeyword guifg=#6D7FC9 guibg=NONE
+hi jsClassBlock guifg=#6D7FC9 guibg=NONE
+hi jsObject guifg=#6D7FC9 guibg=NONE
+hi jsObjectKey guifg=#cd8367 guibg=NONE
+hi jsThis guifg=#cd8367 guibg=NONE
+hi javaScriptBoolean guifg=#7040BF guibg=NONE
+
+" HTML And MD support
+hi htmlString guifg=#A5E069 guibg=NONE
+hi htmlTag guifg=#B992DA guibg=NONE
+hi htmlTagName guifg=#B992DA guibg=NONE
+hi mkdListItemLine guifg=#B992DA guibg=NONE
+hi mkdBold gui=bold guifg=#5fb49a guibg=NONE
+hi htmlBold gui=bold guifg=#5fb49a guibg=NONE
+hi mkdBoldItalic gui=italic guifg=#E0BB69 guibg=NONE
+hi htmlBoldItalic gui=italic guifg=#E0BB69 guibg=NONE
+hi htmlH1 guifg=#cb79d8 guibg=NONE
+hi htmlH2 guifg=#799CD8 guibg=NONE
+hi htmlH3 guifg=#e56695 guibg=NONE
+hi htmlH4 guifg=#E56666 guibg=NONE
+hi mkdCode guifg=#A5E069 guibg=NONE
+hi mkdHeading guifg=#e56695 guibg=NONE
+
+" Python Support 
+hi pythonFunction guifg=#e56695 guibg=NONE
+hi pythonFunctionCall guifg=#e56695 guibg=NONE
+hi pythonBuiltinFunc guifg=#e56695 guibg=NONE
+hi pythonString guifg=#A5E069 guibg=NONE
+hi pythonNumber guifg=#799CD8 guibg=NONE
+
 
 " Vim Stuff
-hi Pmenu guifg=#dadada guibg=#454545
-hi SignColumn guibg=#272935
-hi Title guifg=#dadada
-hi LineNr guifg=#747474 guibg=#272935
-hi NonText guifg=#c481ff guibg=#272935
+hi SignColumn guibg=#0D0E17
+hi Title guifg=#C2C2DA
+hi LineNr guifg=#747474 guibg=#0D0E17
+hi NonText guifg=#c481ff guibg=#0D0E17
 hi FoldColumn guifg=#c481ff guibg=NONE
 hi Folded guifg=#8981cb guibg=NONE
 hi Comment guifg=#8981CB gui=italic
 hi SpecialComment guifg=#c481ff gui=italic guibg=NONE
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#747474 guibg=#454545 gui=NONE
-hi StatusLine gui=bold guibg=#454545 guifg=#dadada
-hi StatusLineNC gui=NONE guibg=#272935 guifg=#dadada
-hi Search guibg=#c481ff guifg=#dadada
+hi StatusLine gui=bold guibg=#454545 guifg=#C2C2DA
+hi StatusLineNC gui=NONE guibg=#0D0E17 guifg=#C2C2DA
+hi Search guibg=#c481ff guifg=#C2C2DA
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
-hi Visual guibg=#565C6E
+hi Visual guibg=#413D49
 hi vimWarn guifg=#F15B5B
-hi CursorLine guibg=#454545
+hi CursorLine guibg=#2b292f
 hi CursorLineNr guifg=#c481ff
 
 " NERDTree Support
@@ -92,7 +135,10 @@ hi Directory guifg=#c481ff
 hi NERDTreeFileExec guifg=#e56695
 
 " WildMenu and PMenuSel
-hi Whitespace guifg=#272935  guibg=#c481ff
+hi Whitespace guifg=#0D0E17  guibg=#c481ff
+hi WildMenu guifg=#e56695 guibg=#413D49
+hi Pmenu guifg=#c481ff guibg=#2B292F
+hi PmenuSel guifg=#e56695 guibg=#413D49
 
 " " airline
 
